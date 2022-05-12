@@ -22,6 +22,10 @@ $backdrop_updater = new Benlumia007\Backdrop\Framework();
  * Register default providers
  */
 $backdrop_updater->provider( Benlumia007\Backdrop\Updater\Settings\Provider::class );
+$backdrop_updater->provider( Benlumia007\Backdrop\Updater\Theme\Type\Provider::class );
+$backdrop_updater->provider( Benlumia007\Backdrop\Updater\Theme\Meta\Provider::class );
+$backdrop_updater->provider( Benlumia007\Backdrop\Updater\Theme\Manage\Provider::class );
+$backdrop_updater->provider( Benlumia007\Backdrop\Updater\Api\Provider::class );
 
 /**
  * Boot the Framework

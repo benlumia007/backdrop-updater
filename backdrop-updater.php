@@ -26,6 +26,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+define( 'BACKDROP_PATH', trailingslashit( plugin_dir_path(__FILE__) ) );
+
 /**
  * 2.0 - Required Files
  */
